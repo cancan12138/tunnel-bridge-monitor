@@ -5,7 +5,7 @@
 ## 目录结构
 
 ```
-server/
+backend/
 ├── main.py           # FastAPI 入口，启动时拉起 MQTT 订阅线程
 ├── broker.py         # 纯 Python MQTT Broker（amqtt，替代 mosquitto）
 ├── mqtt_handler.py   # MQTT 订阅 + 解析 + 入库 + 阈值告警
@@ -39,7 +39,7 @@ python broker.py
 ### 2. 启动服务器（REST API + MQTT 订阅）
 
 ```bash
-cd server
+cd backend
 python main.py
 ```
 
@@ -50,7 +50,7 @@ python main.py
 ### 3. 启动模拟监测节点（另开一个终端）
 
 ```bash
-cd server
+cd backend
 python simulator.py
 ```
 
