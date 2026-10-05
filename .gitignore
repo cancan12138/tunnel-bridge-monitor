@@ -1,0 +1,32 @@
+# Keil MDK / STM32 build outputs
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.lnp
+*.map
+*.lst
+*.dep
+*.sct
+*.dbgconf
+*.htm
+*.uvoptx
+*.uvguix.*
+DebugConfig/
+RTE/
+MDK-ARM/*/
+Listings/
+Objects/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Database / runtime
+*.db
+
+# misc
+*.bak
+Thumbs.db
+.DS_Store
